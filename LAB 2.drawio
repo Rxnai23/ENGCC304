@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-07-05T07:59:10.646Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="QD3fDgdHG8JH3v9W3Ud4" version="24.6.4" type="github">
+<mxfile host="app.diagrams.net" modified="2024-07-05T08:07:58.895Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="njyZ94LOHzGExUd8-m4J" version="24.6.4" type="github">
   <diagram name="หน้า-1" id="Rx8m1sHD4eZ3OD9Q6VKZ">
-    <mxGraphModel dx="1750" dy="1005" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="750" dy="431" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -98,8 +98,10 @@
         <mxCell id="1FzuwVbqrv9fw3xXv-sh-29" value="เลือกของในตู้" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
           <mxGeometry x="365" y="390" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="1FzuwVbqrv9fw3xXv-sh-62" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1FzuwVbqrv9fw3xXv-sh-37" target="1FzuwVbqrv9fw3xXv-sh-61">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="1FzuwVbqrv9fw3xXv-sh-62" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1FzuwVbqrv9fw3xXv-sh-37">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="425.5" y="510" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="1FzuwVbqrv9fw3xXv-sh-37" value="เลือกของ" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
           <mxGeometry x="372" y="440" width="107" height="30" as="geometry" />
@@ -133,11 +135,10 @@
         <mxCell id="1FzuwVbqrv9fw3xXv-sh-58" value="End เงินทอนในตู้กด" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="730" y="440" width="120" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="1FzuwVbqrv9fw3xXv-sh-66" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1FzuwVbqrv9fw3xXv-sh-61" target="1FzuwVbqrv9fw3xXv-sh-65">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="1FzuwVbqrv9fw3xXv-sh-61" value="ชำระเงิน" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
-          <mxGeometry x="383" y="510" width="85" height="30" as="geometry" />
+        <mxCell id="1FzuwVbqrv9fw3xXv-sh-66" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="1FzuwVbqrv9fw3xXv-sh-65">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="425.52" y="540" as="sourcePoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="1FzuwVbqrv9fw3xXv-sh-63" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1FzuwVbqrv9fw3xXv-sh-39" target="1FzuwVbqrv9fw3xXv-sh-51">
           <mxGeometry relative="1" as="geometry">
@@ -645,7 +646,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="1FzuwVbqrv9fw3xXv-sh-234" value="เงินทอนหมด" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="1FzuwVbqrv9fw3xXv-sh-234" value="เงินทอนไม่พอ" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="950" y="1790" width="80" height="20" as="geometry" />
         </mxCell>
         <mxCell id="1FzuwVbqrv9fw3xXv-sh-235" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="1FzuwVbqrv9fw3xXv-sh-234">
@@ -683,6 +684,9 @@
         </mxCell>
         <mxCell id="1FzuwVbqrv9fw3xXv-sh-247" value="No" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="400" y="790" width="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1FzuwVbqrv9fw3xXv-sh-249" value="ชำระเงิน" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="377" y="510" width="97" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
