@@ -17,13 +17,13 @@
             } else {
                 for( int column = 0 ; column < number ; column++ ){
                     if( i + column == number - 1 ) {
-                        printf("1")
+                        printf("1") ;
                     } else {
-                        printf("0")
+                        printf("0") ;
                     }
                 }
             }
-            printf("\n")
+            printf("\n") ;
         }
         return 0 ;
     }
