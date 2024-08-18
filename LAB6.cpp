@@ -11,9 +11,9 @@ int main() {
                 printf("1") ; 
             } else {
                 printf("0") ;
-            }
-        }
+            }//end if
+        }//end for
         printf("\n") ; 
-    }
+    }//end for
     return 0 ;
-}
+}//end main function
