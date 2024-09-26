@@ -45,7 +45,7 @@ int main() {
     }
 
     word2[len] = '\0' ; //เครื่องหมายสิ้นสุด str
-    printf( "word..... %s \n ", word2 ) ; // เช็คว่า word กลับตำแหน่งหรือยัง
+    printf( "word --| %s |-- \n ", word2 ) ; // เช็คว่า word กลับตำแหน่งหรือยัง
 
     int output = strcmp( word1, word2 ) ; //strcmp คือ การเปรียบเทียบ str ทั้ง 2 ตัวว่าตัวอักษรเท่ากันไหม
 
