@@ -33,7 +33,27 @@ int main () {
     int i = 0 ;
 
     for (i = 0; i < num ; i++) {
-        printf("Enter value[]")
+        printf("Enter value[%d]", i) ;
+        scanf("%d", &value) ;
     }
-    
+    printf("\n") ;
+
+    printf("Array :") ;
+    for(i = 0; i < num ; i++) {
+        int check = 1 ;
+        if(num[i] == 0 || num[i] == 1) {
+            cheak = 0 ;
+        } else {
+            for( int j = 2 ; j <= num[i]/2 ; j++) {
+                check = 0 ;
+                break;
+            }
+        }
+
+        if(check == 0) {
+            printf(" #") ;
+        } else {
+            printf("%d", value) ;
+        }
+    }
 }
