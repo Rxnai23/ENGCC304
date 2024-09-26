@@ -74,10 +74,5 @@ int Armstrong ( int num ) {
     } else {
         return 0 ;  // false
     } // end if else
-    
-
-    
-
-    
 
 } //end Armstrong function.
