@@ -21,39 +21,55 @@
         Array:  # 19  #  #  #  2
 */
 #include <stdio.h>
+#include <math.h>
 
-int main () {
+int isPrime( int num ) {
 
-    int num[6], i ;
+    if( num < 2 ) 
+    return 0 ;
 
-    printf("Enter N :") ;
-    scanf("%d", &num) ;
+    for ( int i = 2 ; i <= sqrt( num ) ; i++) {
+        if ( num % i == 0 ) 
+        return 0 ; 
+    
+    } return 1 ;
 
-    int value[num] ;
-    int i = 0 ;
+}
 
-    for (i = 0; i < num ; i++) {
-        printf("Enter value[%d]", i) ;
-        scanf("%d", &value) ;
+int main() {
+
+    int n ;
+
+    printf( "Enter N : " ) ;
+    scanf( "%d", &n ) ;
+
+    int arr[n] ;
+
+    for( int i = 0 ; i < n ; i++ ) {
+        printf( "Enter value[%d] : ", i ) ;
+        scanf( "%d", &arr[i] ) ;
     }
-    printf("\n") ;
+    
+    printf("Index:  ");
 
-    printf("Array :") ;
-    for(i = 0; i < num ; i++) {
-        int check = 1 ;
-        if(num[i] == 0 || num[i] == 1) {
-            cheak = 0 ;
-        } else {
-            for( int j = 2 ; j <= num[i]/2 ; j++) {
-                check = 0 ;
-                break;
-            }
-        }
-
-        if(check == 0) {
-            printf(" #") ;
-        } else {
-            printf("%d", value) ;
-        }
+    for ( int i = 0 ; i < n ; i++ ) {
+    
+        printf( "%2d ", i ) ;
     }
+
+    printf( "\n" ) ;
+    printf( "Array:  " ) ;
+
+    for( int i = 0 ; i < n ; i++ ) {
+    
+        if ( isPrime(arr[i]) )
+            printf( "%2d ", arr[i] ) ; 
+        else
+
+        printf( "%2s ", "#" ) ; 
+    }
+    
+    printf( "\n" ) ;
+
+    return 0;
 }

@@ -38,31 +38,30 @@
 int main() {
 
     int score = 0 ;
-    printf( "enter score : ") ;
-    scanf( "%d", &score ) ;
-    printf( "Grade : " ) ;
 
-    int count = 0 ;
-    if ( score != 1 ) {
+    printf( "Enter score: ") ;
+
+    if ( scanf( "%d", &score ) != 1 ) {
         printf( "please enter number only." ) ;
-    }
+        return 1 ;
+    }     
 
     if( score >= 80 ) {
-        printf( "A") ;
+        printf( "A !") ;
     } else if ( score >= 75 && score < 80 ) {
-        printf( "B+" ) ;
+        printf( "B+ !" ) ;
     } else if ( score >= 70 && score < 75 ) {
-      printf( "B" ) ;
+      printf( "B !" ) ;
     } else if ( score >= 65 && score < 70 ) {
-        printf( "C+" ) ;
+        printf( "C+ !" ) ;
     } else if ( score >= 60 && score < 65 ) {
-        printf( "C" ) ;
+        printf( "C !" ) ;
     } else if ( score >= 55 && score < 60 ) {
-        printf( "D+" ) ;
+        printf( "D+ !" ) ;
     } else if ( score >= 50 && score < 55 ) {
-        printf( "D" ) ;
+        printf( "D !" ) ;
     } else {
-        printf( "F" ) ;
+        printf( "F !" ) ;
     }//end if
 
     return 0 ;

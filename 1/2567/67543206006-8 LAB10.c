@@ -34,7 +34,7 @@ int main() {
 
     char word1[100], word2[100] ;
 
-    printf( " Enter word : " ) ;
+    printf( " Enter word: " ) ;
     scanf( "%s", word1 ) ;
     
     int len = strlen( word1 ) ; //strlen จะนับจน.อักษรใน str ว่ามีกี่ตัว *ไม่นับเครื่องหมด '/0'*
@@ -45,14 +45,14 @@ int main() {
     }
 
     word2[len] = '\0' ; //เครื่องหมายสิ้นสุด str
-    printf( "word --| %s |-- \n ", word2 ) ; // เช็คว่า word กลับตำแหน่งหรือยัง
+    //printf( "word --| %s |-- \n ", word2 ) ; // เช็คว่า word กลับตำแหน่งหรือยัง
 
     int output = strcmp( word1, word2 ) ; //strcmp คือ การเปรียบเทียบ str ทั้ง 2 ตัวว่าตัวอักษรเท่ากันไหม
 
-    if ( output == true ) {
-        printf( "Pass" ) ;
+    if ( output ==  0 ) {
+        printf( "Pass." ) ;
     } else {
-        printf( "Not pass" ) ;
+        printf( "Pass." ) ;
     }
     
     return 0 ;

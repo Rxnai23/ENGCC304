@@ -51,69 +51,59 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
+#include <time.h> 
 
-int main () {
-
-    int num, guess ;
-    int random ;
-
+int main() {
     srand( time( NULL ) ) ;
-
-    while ( true ) {
-        int most = 100 , least = 1 ;
-        int score = 100 ;
-
-        printf ( "Do you want to play game ( 1 = play , -1 = exit ) : " ) ;
-        scanf ( "%d", &num ) ;
-
-        if (num != 1) {
-            printf ( "you don't want to play" ) ;
-            return 0 ;
-        } else if ( num == 1 ) {
-
-        random = rand() % 100 + 1 ;
-        printf(" Random number is %d \n " , random) ;
-        printf ( "score = %d \n" , score ) ;
+    int randomNumber = 0, user_number = 0, Score = 100, in_game = 0, dif1 = 1, dif2 = 100 ;  
+    while ( 1 ) {  
+        Score = 100 ; 
+        dif1 = 1, dif2 = 100 ; 
         
-        while ( 1 ) {
-            printf ( "Guess the winning number (%d-%d) :", least, most ) ;
-            scanf ( "%d" , &guess ) ;
-
-            if ( guess < random ) {
-                printf ( "Sorry, the winning number is HIGHER than %d \n" , guess ) ;
-                // printf ( "Guess the winning number (%d-%d)" , least, most ) ;
-                
-                if ( guess > least ) {
-                    least = guess + 1 ;
-                } //end if least
-                score -= 10 ;
-
-                
-            } else if ( guess > random ) {
-                printf ( "Sorry, the winning number is LOWER than %d\n" , guess ) ;
-                // printf ( "Guess the winning number (%d-%d)" , least , most ) ;
-                
-                if ( guess < most ) {
-                     most = guess -1 ;
-                } // end if most
-                score -= 10 ;
-                
-            } else if ( guess == random ) {
-                printf ( "That is correct! The winning number is %d\n" , guess ) ;
-                break ;
-            } //end else if
-
-            printf ( "Score this game: %d\n" , score ) ;
-
-            if ( score <= 0 ) {
-                printf ( "Game over!\n" ) ;
-                break ;
-            } // end if score
+        printf( "Do you want to play game (1=play, -1=exit) : " ) ;
+        scanf( "%d", &in_game ) ;
+        
+        if ( in_game == 1 )
+        {
             
-        } //end while
+             randomNumber = 42 ; 
+            printf( "(Score=%d)\n", Score ) ;
+            
+            do{
+                printf( "Guess the winning number (%d-%d): ", dif1, dif2  ) ;
+                scanf( "%d", &user_number ) ;
+                if ( user_number < dif1 || user_number > dif2 )
+                {
+                    printf("Your guess is out of the current bounds (%d-%d)! Try again.\n", dif1, dif2);
+                    continue ;  
+                } 
+                
+                if ( user_number == randomNumber ) {
+                    printf( "That is correct! The winning number is %d.\n", randomNumber ) ;
+                    printf( "Score this game: %d\n", Score ) ;
+                }else if ( user_number < randomNumber ) {
+                    Score -= 10 ;
+                    printf( "Sorry, the winning number is HIGHER than %d. (Score=%d)\n", user_number, Score ) ;
+                    if ( user_number > dif1 )
+                    {
+                        dif1 = user_number + 1 ;
+                    }                    
+                    
+                }else if ( user_number > randomNumber ) {
+                    Score -= 10 ;
+                    printf( "Sorry, the winning number is LOWER than %d. (Score=%d)\n", user_number, Score ) ;
+                    if ( user_number < dif2 )
+                    {
+                        dif2 = user_number - 1 ;
+                    }  
+                }
+                if  ( Score == 0 ){
+                    break ;
+                }
+            } while ( user_number != randomNumber ) ; 
+        }else{
+            break ;
         }
-    } //end while
+    }
     return 0 ;
-
-} //end main function.  
+}
